@@ -67,3 +67,52 @@ print(list2)
 #Extend method to add list2 at the end of list1:
 list1.extend(list2)
 print(list1)
+# Tuples
+thistuple = ("apple", "banana", "cherry")
+print(thistuple)
+#Tuple Length
+thistuple = ("apple", "banana", "cherry")
+print(len(thistuple))
+# Create Tuple With One Item
+thistuple = ("apple",)
+print(type(thistuple))
+#NOT a tuple
+thistuple = ("apple")
+print(type(thistuple))
+#The tuple() Constructor
+thistuple = tuple(("apple", "banana", "cherry")) # note the double parentheses
+print(thistuple)
+#Access Tuple Items
+thistuple = ("apple", "banana", "cherry")
+print(thistuple[1])
+#Range of Indexes
+thistuple =("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+print(thistuple[2:5])
+# Update Tuples
+#Change Tuple Values
+x = ("apple", "banana", "cherry")
+y = list(x)
+y[1] = "kiwi"
+x = tuple(y)
+print(x)
+#Unpack Tuples
+fruits = ("apple", "banana", "cherry")
+(green, yellow, red) = fruits
+print(green)
+print(yellow)
+print(red)
+#Using Asterisk
+fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
+(green, yellow, *red) = fruits
+print(green)
+print(yellow)
+print(red)
+#Join Tuples
+tuple1 = ("a", "b" , "c")
+tuple2 = (1, 2, 3)
+tuple3 = tuple1 + tuple2
+print(tuple3)
+#Multiply the fruits tuple
+fruits = (2, 2, 55)
+mytuple = fruits * 2
+print(mytuple)
